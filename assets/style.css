@@ -9,26 +9,43 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
     --hue-correct: 145;
 }
 
+header{
+    display:flex;
+    justify-content: center;
+}
+
+.timer-container{
+    display: flex;
+    /* justify-content: center;
+    padding-bottom: 250px;
+    padding-left: 250px; */
+}
+
+#timer {
+    position: absolute;
+    left:50px;
+    top: 10px;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+#highscore{
+    position: absolute;
+    right: 50px;
+    top: 10px;
+}
 
 body {
-    --hue: var(--hue-neutral);
-    padding: 0;
+    padding-top: 25%;
     margin: 0;
     display: flex;
+    flex-wrap: wrap;
     width: 100vw;
-    height: 100vh;
+    height: 50vh;
     justify-content: center;
     align-items: center;
-    /* background-color: hsl(var(--hue), 100%, 20%); */
     background-color: tan
-}
-
-body.correct {
-    /* --hue: var(--hue-correct); */
-}
-
-body.wrong {
-    /* --hue: var(--hue-wrong); */
 }
 
 .container {
@@ -86,7 +103,4 @@ body.wrong {
     display: none;
 }
 
-/* .instructions {
-    font-size: 19px;
-    padding-right: 45px;
-} */
+
